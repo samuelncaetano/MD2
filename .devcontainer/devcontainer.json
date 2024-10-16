@@ -1,0 +1,68 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+  "name": "C/C++",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "miguelsolorio.symbols",
+        "miguelsolorio.min-theme",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "streetsidesoftware.code-spell-checker-british-english",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.cpptools-extension-pack"
+      ],
+      "settings": {
+        "workbench.iconTheme": "symbols",
+        "workbench.colorTheme": "Min Dark",
+        "workbench.editor.labelFormat": "short",
+        "workbench.activityBar.location": "hidden",
+        "workbench.layoutControl.enabled": false,
+        "terminal.integrated.fontSize": 14,
+        "editor.fontSize": 14,
+        "editor.lineHeight": 1.8,
+        "editor.renderLineHighlight": "gutter",
+        "editor.fontLigatures": true,
+        "editor.fontFamily": "JetBrains Mono",
+        "editor.tabSize": 2,
+        "editor.semanticHighlighting.enabled": false,
+        "editor.minimap.enabled": false,
+        "editor.scrollbar.vertical": "hidden",
+        "editor.scrollbar.horizontal": "hidden",
+        "breadcrumbs.enabled": false,
+        "explorer.confirmDelete": false,
+        "explorer.confirmDragAndDrop": false,
+        "explorer.compactFolders": false,
+        "explorer.sortOrder": "foldersNestsFiles",
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {},
+        "cSpell.language": "en,pt"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+      "plugins": "git git-flow F-Sy-H zsh-autosuggestions zsh-completions python",
+      "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions"
+    }
+  }
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "gcc -v",
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

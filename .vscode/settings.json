@@ -1,0 +1,17 @@
+{
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.words": [
+    "azuretools",
+    "brazilian",
+    "british",
+    "cpptools",
+    "devcontainers",
+    "eamodio",
+    "fibonacci",
+    "geistmann",
+    "miguelsolorio",
+    "stuartleeks"
+  ]
+}
